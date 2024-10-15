@@ -36,7 +36,7 @@
             color: white;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 18px;
+            font-size: 16px;
         }
         .header nav a:hover {
             text-decoration: underline;
@@ -62,8 +62,8 @@
             max-width: 100%;
         }
         .main-content img {
-            width: 100%;
-            max-width: 100%;
+            width: 80%;
+            max-width: 400px;
             margin: 20px 0;
         }
         .footer {
@@ -100,6 +100,15 @@
             text-align: right;
             font-size: 14px;
         }
+        @media (max-width: 768px) {
+            .header nav a {
+                font-size: 14px;
+                margin: 0 10px;
+            }
+            .main-content img {
+                width: 90%;
+            }
+        }
   </style>
  </head>
  <body>
@@ -113,19 +122,6 @@
       About
      </a>
     </nav>
-    <style>
-    @media (max-width: 768px) {
-      .Navbar {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-      }
-      .Navbar a {
-        font-size: 18px;
-        padding: 10px;
-      }
-    }
-    </style>
     <div class="user">
      <i class="fas fa-user">
      </i>
@@ -144,7 +140,7 @@
     <p>
         Hy vọng bạn sẽ trở thành một con người tốt hơn, mong Allah sẽ giúp bạn dễ dàng vượt qua mọi khó khăn, và hy vọng những điều tốt đẹp sẽ luôn đồng hành cùng bạn.
     </p>
-    <img alt="Nguyet" src="NG.jpeg" style="max-width: 100%; height: auto;"/>
+    <img alt="Nguyet" src="NG.jpeg"/>
    </div>
    <div class="quote">
     <div class="date">
@@ -159,6 +155,22 @@
      "Đừng để một người đàn ông không yêu thương bạn và đã tuyên bố chia tay làm bạn cảm thấy tan vỡ. Hãy tập trung vào bản thân; bạn xứng đáng nhận được hạnh phúc tốt hơn." – Angry Ahay
     </p>
    </div>
+   <style>
+    @media (max-width: 768px) {
+      .quote {
+        padding: 10px;
+      }
+      .quote .date {
+        font-size: 12px;
+      }
+      .quote h3 {
+        font-size: 18px;
+      }
+      .quote p {
+        font-size: 14px;
+      }
+    }
+   </style>
    <div class="footer">
     <a href="https://www.instagram.com/minh_nguyetwjwj/?utm_source=ig_web_button_share_sheet" class="instagram-link">
      <i class="fab fa-instagram">
