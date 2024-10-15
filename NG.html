@@ -18,8 +18,6 @@
             align-items: center;
             width: 100%;
         }
-
-
         .container {
             display: flex;
             flex-direction: column;
@@ -68,9 +66,6 @@
             max-width: 100%;
             margin: 20px 0;
         }
-        .sidebar {
-            display: none;
-        }
         .footer {
             width: 100%;
             text-align: center;
@@ -105,59 +100,9 @@
             text-align: right;
             font-size: 14px;
         }
-        @media (min-width: 768px) {
-            .main-content h1 {
-                font-size: 48px;
-            }
-            .main-content h2 {
-                font-size: 36px;
-            }
-            .main-content p {
-                font-size: 18px;
-            }
-            .quote h3 {
-                font-size: 24px;
-            }
-            .quote p {
-                font-size: 18px;
-            }
-            .sidebar {
-                display: flex;
-                position: fixed;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                width: 60px;
-                background-color: #8AA6A3;
-                flex-direction: column;
-                align-items: center;
-                padding: 20px 0;
-            }
-            .sidebar a {
-                color: white;
-                text-decoration: none;
-                margin: 20px 0;
-                writing-mode: vertical-rl;
-                transform: rotate(180deg);
-            }
-        }
   </style>
  </head>
  <body>
-  <div class="sidebar">
-   <a href="#">
-    Harian
-   </a>
-   <a href="#">
-    Instagram
-   </a>
-   <a href="#">
-    Cerita
-   </a>
-   <a href="#">
-    Ulang Tahun
-   </a>
-  </div>
   <div class="container">
    <div class="header">
     <nav class="Navbar">
@@ -167,10 +112,20 @@
      <a href="About.html">
       About
      </a>
-     <a href="#">
-      
-     </a>
     </nav>
+    <style>
+    @media (max-width: 768px) {
+      .Navbar {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+      .Navbar a {
+        font-size: 18px;
+        padding: 10px;
+      }
+    }
+    </style>
     <div class="user">
      <i class="fas fa-user">
      </i>
@@ -189,7 +144,7 @@
     <p>
         Hy vọng bạn sẽ trở thành một con người tốt hơn, mong Allah sẽ giúp bạn dễ dàng vượt qua mọi khó khăn, và hy vọng những điều tốt đẹp sẽ luôn đồng hành cùng bạn.
     </p>
-    <img alt="Nguyet" src="NG.jpeg" style="max-width: 80%; height: auto;"/>
+    <img alt="Nguyet" src="NG.jpeg" style="max-width: 100%; height: auto;"/>
    </div>
    <div class="quote">
     <div class="date">
@@ -201,11 +156,10 @@
      Love Yourself Nguyệt.
     </h3>
     <p>
-     “Đừng để một người đàn ông không yêu thương bạn và đã tuyên bố chia tay làm bạn cảm thấy tan vỡ. Hãy tập trung vào bản thân; bạn xứng đáng nhận được hạnh phúc tốt hơn.” – Angry Ahay
+     "Đừng để một người đàn ông không yêu thương bạn và đã tuyên bố chia tay làm bạn cảm thấy tan vỡ. Hãy tập trung vào bản thân; bạn xứng đáng nhận được hạnh phúc tốt hơn." – Angry Ahay
     </p>
    </div>
    <div class="footer">
-
     <a href="https://www.instagram.com/minh_nguyetwjwj/?utm_source=ig_web_button_share_sheet" class="instagram-link">
      <i class="fab fa-instagram">
      </i>
